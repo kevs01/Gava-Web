@@ -1,0 +1,21 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-bg {
+  background-image: url('https://placehold.co/1920x1080/1E3A8A/FFFFFF?text=Fondo+Industrial+Moderno');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-center mb-8 text-slate-700;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+}
+
+.icon-placeholder {
+  @apply w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center mb-4;
+}
