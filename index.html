@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAVA Productos Industriales - Socio Industrial Estratégico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/1E3A8A/FFFFFF?text=Fondo+Industrial+Moderno');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-center mb-8 text-slate-700;
+        }
+        .card {
+            @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+        .icon-placeholder {
+            @apply w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center mb-4;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-700">LOGO<span class="text-blue-600"></span></a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#inicio" class="text-slate-600 hover:text-blue-600">Inicio</a>
+                <a href="#nosotros" class="text-slate-600 hover:text-blue-600">Nosotros</a>
+                <a href="#servicios" class="text-slate-600 hover:text-blue-600">Servicios</a>
+                <a href="#porque-gava" class="text-slate-600 hover:text-blue-600">¿Por qué GAVA?</a>
+                <a href="#contacto" class="text-slate-600 hover:text-blue-600">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-slate-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="#inicio" class="block px-6 py-3 text-slate-600 hover:bg-blue-50 hover:text-blue-600">Inicio</a>
+            <a href="#nosotros" class="block px-6 py-3 text-slate-600 hover:bg-blue-50 hover:text-blue-600">Nosotros</a>
+            <a href="#servicios" class="block px-6 py-3 text-slate-600 hover:bg-blue-50 hover:text-blue-600">Servicios</a>
+            <a href="#porque-gava" class="block px-6 py-3 text-slate-600 hover:bg-blue-50 hover:text-blue-600">¿Por qué GAVA?</a>
+            <a href="#contacto" class="block px-6 py-3 text-slate-600 hover:bg-blue-50 hover:text-blue-600">Contacto</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center bg-black bg-opacity-50 p-10 rounded-lg">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">GAVA</h1>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Productos Industriales</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                Operamos un modelo de negocio híbrido y robusto que integra distribución especializada, manufactura flexible y consultoría con soluciones integrales.
+            </p>
+            <a href="#servicios" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Conoce Nuestras Soluciones</a>
+        </div>
+    </header>
+
+    <section id="nosotros" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Nuestro Origen y Evolución</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://placehold.co/600x400/60A5FA/FFFFFF?text=Equipo+GAVA+Trabajando" alt="Equipo GAVA trabajando" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Nacido de la especialización en el nicho crítico de ESD (Control de Descargas Electrostáticas) para industrias de alta exigencia como la automotriz, electrónica y aeroespacial, GAVA ha evolucionado orgánicamente. Hemos apalancado nuestro profundo <em class="font-semibold">know-how técnico</em> para expandirnos hacia la manufactura flexible y la consultoría integral de la cadena de suministro.
+                    </p>
+                    <p class="text-lg text-slate-600 leading-relaxed mt-4">
+                        Esta trayectoria nos ha permitido establecer una <em class="font-semibold">presencia nacional estratégica</em>, convirtiéndonos en un aliado confiable para empresas que buscan optimización, seguridad y soluciones a medida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Los cuadros de las soluciones en cuadritos de colores
+     Botones debajo de los dos primeros quer digan productos que te dirijan a otra pagina con los productos y sus descripciones
+     El tercero tambien te lleva a una pagina (la infografia)
+    -->
+
+    <section id="servicios" class="py-16 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Soluciones Integrales para Tu Industria</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card">
+                    <div class="icon-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Línea ESD: Protección Antiestática</h3>
+                    <p class="text-slate-600">Soluciones completas para el control de descargas electrostáticas: EPP, empaques (bolsas, cajas, charolas, láminas, tapetes) y cubiertas. Fuerte énfasis en <em class="font-semibold">soluciones personalizadas</em> para proteger sus componentes sensibles.</p>
+                </div>
+                <div class="card">
+                     <div class="icon-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Línea de Inyección: Manufactura Plástica</h3>
+                    <p class="text-slate-600">Diseño, desarrollo y fabricación de productos plásticos. Actualmente destacamos en ganchos para el sector minorista, con opciones de <em class="font-semibold">personalización y materiales sostenibles</em>. Desde prototipos hasta producción en masa.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5A2.25 2.25 0 0011.25 11.25H6.75A2.25 2.25 0 004.5 13.5V21M6.75 21v-7.5A2.25 2.25 0 019 11.25h1.5A2.25 2.25 0 0112.75 13.5V21m0 0h2.25A2.25 2.25 0 0017.25 18.75V16.5A2.25 2.25 0 0015 14.25h-1.5M13.5 21H3.375c-.621 0-1.125-.504-1.125-1.125V9.75c0-.621.504-1.125 1.125-1.125h17.25c.621 0 1.125.504 1.125 1.125v10.125c0 .621-.504 1.125-1.125 1.125h-9.75z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Brokerage & Supply Chain</h3>
+                    <p class="text-slate-600">Servicio de alto valor que aborda y resuelve desafíos en adquisición, fabricación, calidad y gestión de inventarios. Funcionamos como su departamento externo de <em class="font-semibold">"búsqueda y desarrollo"</em> para optimizar su cadena de suministro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Atendemos Necesidades Críticas</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <img src="https://placehold.co/300x200/3B82F6/FFFFFF?text=Protección+ESD" alt="Protección ESD" class="rounded-lg shadow-md mx-auto mb-4 w-full h-40 object-cover">
+                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Protección y Prevención</h3>
+                    <p class="text-slate-600">Mitigamos el riesgo de daños por ESD en componentes sensibles, previniendo pérdidas económicas significativas.</p>
+                </div>
+                <div class="p-6">
+                    <img src="https://placehold.co/300x200/10B981/FFFFFF?text=Eficiencia+Operativa" alt="Eficiencia Operativa" class="rounded-lg shadow-md mx-auto mb-4 w-full h-40 object-cover">
+                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Eficiencia Operativa</h3>
+                    <p class="text-slate-600">Proporcionamos soluciones de manejo, almacenamiento y transporte a la medida. Optimizamos la cadena de suministro minorista.</p>
+                </div>
+                <div class="p-6">
+                     <img src="https://placehold.co/300x200/F59E0B/FFFFFF?text=Resolución+de+Problemas" alt="Resolución de Problemas" class="rounded-lg shadow-md mx-auto mb-4 w-full h-40 object-cover">
+                    <h3 class="text-xl font-semibold text-slate-700 mb-2">Resolución de Problemas</h3>
+                    <p class="text-slate-600">Ofrecemos soluciones ágiles y expertas a desafíos complejos de la cadena de suministro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="porque-gava" class="py-16 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">¿Por Qué Elegir GAVA?</h2>
+
+            <div class="mb-12 card">
+                <h3 class="text-2xl font-semibold text-slate-700 mb-3 text-center">Nuestro Diferenciador Único: Integración Sinérgica</h3>
+                <p class="text-lg text-slate-600 leading-relaxed text-center max-w-3xl mx-auto">
+                    GAVA no es solo un distribuidor, un fabricante o un consultor; <strong class="text-blue-600">somos la combinación de estos tres pilares</strong>. Nuestra capacidad única reside en ofrecer desde un producto estándar ESD hasta una solución de cadena de suministro completamente rediseñada, pasando por la manufactura personalizada, todo bajo un mismo paraguas de ingeniería y "búsqueda y desarrollo".
+                </p>
+                 <img src="https://placehold.co/800x300/93C5FD/FFFFFF?text=Integración+Sinergica+de+Capacidades" alt="Diagrama de Integración de Capacidades GAVA" class="rounded-lg shadow-md mx-auto mt-6 w-full max-w-2xl h-auto object-cover">
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-slate-700 mb-4">Valores que nos Guían</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Expertise Confiable</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Enfoque en Soluciones</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Adaptabilidad y Customización</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Agilidad e Innovación</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Sostenibilidad Responsable</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> Alianza Estratégica</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-slate-700 mb-4">Beneficios para su Empresa</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> <strong class="mr-1">Seguridad:</strong> Protección garantizada contra riesgos ESD.</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> <strong class="mr-1">Rentabilidad:</strong> Prevención de pérdidas y optimización de cadenas.</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> <strong class="mr-1">Personalización:</strong> Soluciones que se adaptan perfectamente a sus necesidades.</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> <strong class="mr-1">Eficiencia:</strong> Agilidad en la respuesta y resolución de problemas.</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">&#10004;</span> <strong class="mr-1">Tranquilidad:</strong> Confianza en un socio experto y versátil.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 card">
+                <h3 class="text-xl font-semibold text-slate-700 mb-4 text-center">Nuestras Ventajas Competitivas</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-700">Modelo Híbrido</h4>
+                        <p class="text-sm text-slate-600">Difícil de replicar por competidores especializados.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-700">Ingeniería y Diseño Interna</h4>
+                        <p class="text-sm text-slate-600">Innovación y personalización rápidas.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-700">Agilidad en Sourcing</h4>
+                        <p class="text-sm text-slate-600">Red de contactos para proveedores únicos.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-700">Enfoque Consultivo</h4>
+                        <p class="text-sm text-slate-600">Venta de valor (prevención, optimización).</p>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-700">Potencial de Sostenibilidad</h4>
+                        <p class="text-sm text-slate-600">Atractivo para clientes eco-conscientes.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-700">Base Industrial Establecida</h4>
+                        <p class="text-sm text-slate-600">Presencia y cartera de clientes en sectores clave.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4"> Su Solucionador Integral de Desafíos Industriales</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto"> Permítanos ser su aliado.</p>
+            <a href="#contacto" class="bg-white hover:bg-slate-100 text-blue-600 font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Solicita tu cotizacion</a>
+        </div>
+    </section>
+
+    <!-- EL FORMULARIO QUE INCLUYA NOMBRE, EMAIL, TELEFONO, PRODUCTO, CANTIDAD, MENSAJE Y BOTON DE ENVIAR
+     TODOS REQUERIDOS 
+    -->
+
+    <footer id="contacto" class="py-16 bg-slate-800 text-slate-300">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">GAVA Productos Industriales</h3>
+                    <p>Socio Industrial Estratégico B2B.</p>
+                    <p class="mt-2">Comprometidos con su éxito.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#nosotros" class="hover:text-blue-400">Nosotros</a></li>
+                        <li><a href="#servicios" class="hover:text-blue-400">Servicios</a></li>
+                        <li><a href="#porque-gava" class="hover:text-blue-400">¿Por qué GAVA?</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Contacto (Simulado)</h3>
+                    <p>Email: contacto@gavaindustrial.com</p>
+                    <p>Teléfono: +52 (XX) XXXX-XXXX</p>
+                    <p>Dirección: Ciudad Industrial, México (Ejemplo)</p>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-slate-700 pt-8 text-center text-sm">
+                <p>&copy; <span id="currentYear"></span> GAVA Productos Industriales. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTON DE WHATSAPP 
+     TALON DE LA PAGINA INSPIRADA EN ESTATEC-->
+
+    <script>
+        // Script para menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Script para cerrar menú móvil al hacer clic en un enlace
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Script para el año actual en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
